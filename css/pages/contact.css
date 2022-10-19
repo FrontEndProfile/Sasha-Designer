@@ -1,0 +1,296 @@
+
+
+.invert{
+   filter: invert();
+}
+
+
+.navbar-brand:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(0deg);
+    }
+
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.mainHead{
+    margin-top: 50px;
+}
+
+
+.contactImgTwo{
+    display: none;
+}
+
+
+.main-img{
+    margin-top: 250px;
+}
+
+
+.description small{
+ font-size: 1rem;
+ font-weight: 800;
+ color: #5B5B5B;
+}
+
+
+.description{
+    width: 100%;
+}
+
+
+.description h1{
+    font-size: 8rem !important;
+    color: #5B5B5B;
+}
+
+
+.footer{
+    margin-top: 250px;
+}
+
+
+.foot-border{
+    border-top: 1px solid #BCBABA;
+}
+
+
+#foot-links{
+    display: flex !important;
+    flex-direction: row;
+}
+
+
+.foot-link{
+    border-radius: 50%;
+    background-color: #BCBABA;
+    color: #100F0F !important;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+}
+
+
+
+.offcanvas{
+    width: 100vw !important;
+    background-color: #100F0F !important;
+}
+
+
+.btn-close{
+    color: #5B5B5B !important;
+    font-size: 2rem !important;
+}
+
+
+
+.offcanvaslinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.offcanvaslink{
+color: #5B5B5B;
+}
+
+
+
+@media screen and (max-width:992px){
+    .description h1{
+        font-size: 3.9rem !important;
+        font-weight: bold !important;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .foot-link, .foot-link i{font-size: 1.2rem !important;}
+
+    .main-img{margin-top: 150px;}
+
+}
+
+
+@media screen and (max-width:640px) {
+    .navbar-brand img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media(max-width:576px){
+    .main-img img{
+        height: 300px;
+        width: 400px;
+    }
+}
+
+
+/*@media screen and (max-width:475px){
+.navbar-brand{display: none;}
+}*/
+
+
+@media screen and (max-width: 375px){
+    
+.contactImgOne{
+    display: none;
+}
+
+.contactImgTwo{
+    display: inline-block;
+}
+
+}
+
+
+.red{
+    width: 106px;
+    height: 106px;
+
+    background-color: #D3392B;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.email{
+    width: 106px;
+    height: 106px;
+
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+
+.email:hover{
+    filter: invert(100%);
+}
+
+
+.sasha-intro-contact{
+    /* background-color: aquamarine; */
+    width: 760px;
+}
+
+
+.download-cv {
+	padding: 20px 6rem;
+	border: 3px solid #E6C140;
+	border-radius: 50px;
+	color: #E6C140;
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.download-cv:hover{
+    background-color: #E6C140;
+    color: #000;
+}
+
+
+.mainhead-contact{
+    color: #fff;
+}
+
+
+.arrow-right{
+    transform: scaleX(0.85);
+}
+
+
+@media(max-width:1200px){
+
+    .sasha-intro-contact{width: 620px;}
+    
+    /* .download-cv{
+        width: 412px;
+        height: 101px;
+    
+        border: 3px solid #E6C140;
+        border-radius: 230.03px;
+        font-size: 30px;
+    } */
+
+
+    .email, .red{
+        width: 84px;
+        height: 84px;
+    }
+
+
+    .heart, .envelop, .message, .speachbubble{
+        transform: scale(0.8);
+    }
+}
+
+
+@media(max-width:970px){
+
+    /* .download-cv{
+        width: 352px;
+        height: 85px;
+    
+        border-radius: 190px;
+        font-size: 26px;
+    } */
+    
+    .arrow-right{
+        transform: scaleX(0.8);
+    }
+
+}
+
+
+@media(max-width:768px){
+    .download-cv{
+        /* width: 312px;
+        height: 61px;
+
+        border-radius: 150px; */
+        /* font-size: 20px; */
+    }
+
+    .email, .red{
+        width: 54px;
+        height: 54px;
+    }
+
+    .heart, .envelop, .message, .speachbubble{
+        transform: scale(0.6);
+    }
+
+    .sasha-intro-contact{
+        width: 450px;
+    }
+}
+

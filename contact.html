@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/pages/contact.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body >
+  <body onload="load__()" id="body-home" class="bg--theme">
+  <div id="load_icon" class="loading"></div> 
+
+<!--===HEADER==============================================================-->
+<header class="black">
+  <nav class="navbar navbar-expand-lg navbar-light bg--theme py-3">
+    <div class="container">
+      <a class="navbar-brand m-0" href="index.html">
+        <img class="header-logo" src="images/Logo-white.png" alt="Logo-black">
+      </a>
+      <!-- OFFCANVAS  -->
+      <a class="btn border-0 shadow-none d-block d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon white"></span>
+      </a>      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="moody.html">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lab.html">Lab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-0" href="unico.html">About</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <!-- MOBO VIEW -->
+  <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-close-white text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item m-0">
+          <a class="nav-link fw-500 active" aria-current="page" href="moody.html">Works</a>
+        </li>
+        <li class="nav-item m-0">
+          <a class="nav-link fw-500" href="lab.html">Lab</a>
+        </li>
+        <li class="nav-item m-0">
+          <a class="nav-link fw-500 me-0" href="contact.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!--===HEADER==============================================================-->
+
+
+    <!-- MAIN TEXT -->
+<!-- <section class="mainHead mainhead-contact">
+        <div class="text">
+
+          <div class="line1 top-md">
+            Please<img src="images/speachbubble-md.png" class="sm">
+           feel<div class="light">&nbsp;[&nbsp;</div><img src="images/speachbubble.png" class="speachbubble">&nbsp;free<div class="light">]</div>
+          </div> 
+          
+          <div class="line2 my-sm-3 my-md-0">
+            <div class="light">to<div class="red mt-md-4 mt-sm-5 mx-3"><img src="images/contactheart.png" class="heart"></div>contact me&nbsp;<a href="contactform.html" class="email mt-md-4 mt-sm-5 me-2"><img src="images/email.png" class="envelop"></a></div>/<a href="https://t-do.ru/SashavolkovaL" class="email mt-sm-4 ms-2"><img src="images/telegram.png" class="message"></a>    
+        </div>
+
+        <div class="line3 mt-3">
+          
+        &<img src="images/contactarrow.png" class="arrow-right" style="width: 360px;" class="arrow-right-md d-none mx-md-5 px-xl-5 px-md-4">
+    <img src="images/png/contactarrow.png" style="width: 360px;" class="arrow-right-md d-none mx-md-5 px-xl-5 px-md-4">  
+          
+        <div class="download-cv" onclick="downloadFile('https://drive.google.com/file/d/1SrS83h6GQslzdXVzr3LdUCBH_vj1y7M7/view?usp=sharing')">DOWNLOAD MY CV</div>
+
+        </div>
+
+        </div>
+      </section> -->
+
+
+          <section class="mt-4 mt-md-0">
+            <div class="container">
+              <div class="anime__text row">
+                <div class="col-md-12">
+                   <div class="d-flex align-items-center  ">
+                 
+                  <h3 class=" big__text text-light fw-800">Please feel</h3>
+                  
+                  <h3 class="big__text text-light d-flex align-items-center w-auto mb-0 fw-800">
+                    [<img class="big__text_heart img-fluid" src="images/speachbubble.png" > free]
+                  </h3>
+                </div>
+
+                <div class="d-flex align-items-center mb-md-4 mb-2">
+                  <h3 class="big__text text-light fw-200 d-flex align-items-center">
+                    to 
+                    <img src="images/contact-heart.png" class="img-fluid circle__icons mx-2"> 
+                     contact me 
+                     <div class="d-flex align-items-center"> 
+                       <a href="contactform.html" class="me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="img-fluid circle__icons mx-2" src="images/button-mail.png"></a> /
+                       <a href="https://t-do.ru/SashavolkovaL" class="ms-2"><img src="images/button-telegram.png" class="img-fluid circle__icons mx-2" ></a>
+                     </div>
+                   </h3> 
+                </div>
+
+                <div class="d-sm-flex align-items-center w-auto conty">
+                  <div class=" p-2 d-flex align-items-center justify-content-center slide-fwd-center">
+                    <img class="and ms-3" src="images/and-arrow.png">
+                  </div>
+                  <div class="mx-md-3">
+                    <h3 class=" big__text fw-200 lh-1 d-flex align-items-center">
+
+                      <img src="images/contactarrow.png" class="arrow-right"class="arrow-right-md d-none mx-md-5 px-xl-5 px-md-4">
+
+                      <div class="download-cv" onclick="downloadFile('https://drive.google.com/file/d/1SrS83h6GQslzdXVzr3LdUCBH_vj1y7M7/view?usp=sharing')">DOWNLOAD MY CV</div>
+                     </h3>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    <!-- MAIN IMG -->
+    <section class="main-img  ms-xxl-5 ps-xxl-5 ms-md-3 ms-sm-0 ">
+        <div class="container-md">
+        <img src="images/contact-main.png" class="img-fluid">
+    </div>
+    </section>
+
+
+    <!-- IMG BOTTOM TEXT -->
+    <section class="imgText mt-1 mt-sm-5">
+<div class="container-md">
+
+  <div class="row ms-4 ms-sm-0 ms-md-4 gy-3">
+
+      <div class="col col-sm-3 col-6">
+        <div class="description">
+          <small>Years of experience</small>
+          <h1>14</h1>
+      </div>
+      </div>
+
+      <div class="col col-sm-3 col-6">
+        <div class="description">
+          <small>Experience in UI/UX</small>
+          <h1>3+</h1>
+      </div>
+      </div>
+
+      <div class="col col-sm-3 col-6">
+        <div class="description">
+          <small>Languages</small>
+          <h1 class="mt-lg-0 mt-md-4 mt-sm-4 mt-xl-0 mt-4">2</h1>
+      </div>
+      </div>
+
+      <div class="col col-sm-3 col-6">
+        <div class="description ms-xl-0 ">
+          <small class="px-md-2 px-xl-0">Full-service projects done</small>
+          <h1 class="mt-lg-0 mt-md-2 mt-xl-0">20+</h1>
+      </div>
+      </div>
+
+  </div>
+
+
+  </div>
+    </section>
+
+
+<!--===FOTTER==============================================================-->
+<footer class="py-5">
+  <div class="container">
+    <div class="row py-3">
+      <hr class="bg--white">
+    </div>
+    <div class="row">
+      <div class="col d-none d-sm-block">
+        <div class="footer-logo">
+          <a href="index.html">
+          <img src="images/footer-logo.png" alt="logo">
+          </a>
+        </div>
+        
+      </div>
+      <div class="col">
+        <ul class="d-flex align-items-center justify-content-center justify-content-sm-end">
+          <li class="mx-3"><a href="https://www.linkedin.com/in/aleksandra-volkova-20022146/" target="_blank"><img src="images/Linkin.png" alt="icon"></a></li>
+          <li class="mx-3"><a href="https://www.behance.net/Volkova" target="_blank"><img src="images/Behance.png" alt="icon"></a></li>
+          <li class="mx-3"><a href="https://www.facebook.com/sasha.volkova.9/" target="_blank"><img src="images/Facebook.png" alt="icon"></a></li>
+          <li class="mx-3"><a href="https://www.instagram.com/artksana/" target="_blank"><img src="images/Instagram.png" alt="icon"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--===FOTTER==============================================================-->
+
+<!-- POPUP  -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title fs--2 t--white fw-500" id="exampleModalLabel">Say hello!</h5>
+        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="my-5 pop-contact">
+          <div class="conatiner">
+            <div class="row">
+              <div class="col-md-9 mx-auto">
+                <div class="row">
+                  <div class="col px-4">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control bg-transparent shadow-none t--white" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="t--white Base-font">Your name</label>
+                    </div>
+                  </div>
+    
+                  <div class="col px-4">
+                    <div class="form-floating">
+                      <input type="email" class="form-control bg-transparent shadow-none t--white" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="t--white Base-font">Your mail</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col">
+                    <textarea name="" placeholder="Your text" id="" cols="30" rows="10" class="w-100 p-4 border-white shadow-none t--white Base-font bg-transparent rounded-5"></textarea>
+                  </div>
+                </div>
+                <div class="row my-3">
+                  <div class="d-flex justify-content-end align-items-center">
+                    <a href="#" class="btn pop-submit px-5 py-2 shadow-none rounded-pill t--black">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/script.js" ></script>
+    
+</body>
+</html>

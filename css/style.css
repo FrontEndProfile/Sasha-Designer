@@ -1,0 +1,1124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html{
+        block-size: 100%;
+        inline-size: 100%;
+} */
+
+
+body{
+    /* min-block-size: 100%;
+    min-inline-size: 100%;
+    background-color: #f2f2f2 !important; */
+    overflow-x: hidden;
+     /* font-family: Arial; */
+}
+
+
+/* .invert{
+    filter: invert(100%);
+} */
+
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+
+.default-top{
+position: relative;
+top: 250px;
+}
+
+
+/* .flex{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.arroww {
+    margin: 10px 0px;
+    width: 14vw;
+}
+
+
+.sm{display: none;}
+.md{display: none;}
+
+
+@media (max-width:1200px){
+    .lg{display: none;}
+    .md{display: block;}
+}
+
+
+@media (max-width:576px){
+    .sm{display: block;}
+    .sm-none{display: none;}
+    .down-sm{
+        position: relative;
+        top: 80px;
+    }
+    .up-sm{
+        position: relative;
+        bottom: 80px;
+    }
+}
+
+
+
+
+/*----- NAVBAR -----*/
+
+.nav-item{
+    margin-left: 35px;
+}
+
+
+.nav-link{
+    font-size: 18px;
+
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0;
+}
+
+
+.nav-link::after{
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: 5px;
+
+    border-style: solid;
+    border-width: 0 0px 2px;
+    border-color: #000000;
+
+    transition: 0.2s;
+}
+
+
+.lab:hover::after{
+    border-width: 0 16px 2px !important;
+}
+
+
+.nav-link:hover::after{
+    border-width: 0 25px 2px;
+}
+
+
+.navbar-brand:hover{
+    animation-name: rotate;
+    animation-duration: 1s !important;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotate {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+/*----- END OF NAVBAR -----*/
+
+
+
+
+/*----- MAIN TEXT -----*/
+
+.line1, .line2, .line3{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center !important;
+}
+
+@media (max-width:576px){
+    .line2{
+        align-items: flex-start !important;
+        justify-content: start !important;
+    }
+    .line1, .line3{
+       flex-direction: column;
+       justify-content: start !important;
+       align-items: flex-start !important;
+    }
+    .line3{
+        position: relative !important;
+        bottom: 200px !important;
+    }
+
+
+    .text{
+        margin-left: 60px;
+    }
+}
+
+
+@media(max-width:375px){
+    .text{margin-left: 20px;}
+}
+
+@media(max-width:320px){
+    .text{margin-left: 0;}
+}
+
+
+.mainHead .text{
+    /* line-height: 120.12px; */
+    font-size: 8vw;
+    /* font-size: 124px; */
+    font-weight: 700;
+    white-space: nowrap;
+    margin-top: 70px;  
+}
+
+
+.text .light{
+    font-weight: 100;
+    display: flex;
+}
+
+
+.part1{
+    display: flex;
+    align-items: center;
+}
+
+
+.yellow{
+    width: 109px;
+    height: 109px;
+
+    background-color: #E6C140;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.munich{
+    width: 663px;
+    height: 135px;
+
+    background-color: #0002CD;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+     align-items: center;
+
+    border-radius: 100px;
+}
+
+
+.mainHead {
+    /* font-size: 124px; */
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.heart-md, .textArrow-md{
+    display: none;
+ }
+
+
+ .sasha-intro{
+    width: 600px;
+}
+
+
+ @media(max-width:1333px){
+    /* .mainHead .text{margin: 104px 40px 0 60px;} */
+}
+
+@media(max-width:1233px){
+    .mainHead .text{
+        /* font-size: 96px !important; */
+        /* margin: 104px 10px 0 20px; */
+    }
+
+    /* .light{font-size: 96px !important;} */
+
+    .munich{
+        width: 523px;
+        height: 105px;
+    }
+
+    .yellow, .red, .blue{
+        width: 94px !important;
+        height: 94px !important;
+    }
+
+    .logo img, .thunder, .repeat-img, .arrow-right{
+        transform: scale(0.9);
+    } 
+
+
+    .tosee{
+        width: 436px !important;
+        height: 105px !important;
+        border-radius: 69.5px !important;
+    }
+}
+
+
+@media(max-width:970px){
+    .mainHead .text{
+        /* margin: 104px 0px 0 30px; */
+        /* font-size: 76px !important; */
+    }
+
+    /* .text .light{font-size: 76px !important;} */
+
+    .munich{
+        width: 383px;
+        height: 80px;
+    }
+
+    .yellow, .blue, .red{
+        width: 64px !important;
+        height: 64px !important;
+    }
+
+    .yellow img, .blue img, .red img{transform: scale(0.8);}
+
+    .heart-md, .textArrow-md{display: block;}
+    
+    .heart-lg, .textArrow-lg{display: none;}
+
+    .sasha-intro{width: 400px;}
+
+     .thunder, .repeat-img, .arrow-right{
+        transform: scale(0.8);
+    } 
+
+    .tosee{
+        width: 346px !important;
+        height: 85px !important;
+        border-radius: 55.5px !important;
+    }
+}
+
+
+@media(max-width:768px){    
+    .mainHead .text{
+        /* font-size: 62px !important; */
+        margin-top: 73px;
+        /* margin: 73px 0px 0 0px;     */
+    }
+
+    /* .text .light{font-size: 62px !important;} */
+
+    .yellow{
+        width: 54px !important;
+        height: 54px !important;
+    }
+
+    .munich{
+        width: 330px;
+        height: 67px;
+    }
+
+    .yellow img, .blue img, .red img{transform: scale(0.6);}
+
+    .top-md{
+        position: relative;
+        top: 50px;
+    }
+
+    .bottom-md{
+        position: relative;
+        bottom: 50px;
+    }
+
+    .sasha-intro{width: 300px;}
+
+    .logo img, .thunder, .repeat-img, .arrow-right{
+        transform: scale(0.6);
+    } 
+
+    .tosee{
+        width: 252px !important;
+        height: 66px !important;
+        border-radius: 40px !important;
+    }
+
+}
+
+
+@media(max-width:576px){
+    
+    .mainHead .text{
+        /* line-height: 120px; */
+        margin-top: 36px;
+        /* margin: 36px 0px 0 0px; */
+        width: 100%;        
+    }
+
+
+    .sasha-intro{width: 100%;}
+
+}
+
+
+
+ /*----- END OF MAIN TEXT -----*/
+
+
+
+
+/*----- WORK -----*/
+
+.work{
+    margin-top: 200px;
+}
+
+/* .col{border: 1px solid #000;} */
+.effect {
+    transform: scale(1) !important;
+    transition: 0.6s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0) 0px 7px 29px 0px;
+}
+.effect:hover {
+    transform: scale(.97) !important;
+    transition: 0.6s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.col a{
+    transition: 0.3s;
+}
+
+
+.col a:hover{
+    transform: scale(0.97) !important;
+}
+
+
+
+/*----- MENTORME -----*/
+
+a{
+    display: flex;
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+
+.mentorme{
+    width: 1230px;
+    height: 385px;
+
+    background-color: #FFFFFF;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+
+.mentorme-head{
+    position: relative;
+}
+
+
+.head{
+    padding-top: 195px;
+
+    font-weight: 700;
+    font-size: 62px;
+    
+    line-height: 70.06px;
+}
+
+
+.small{
+    font-size: 18px !important;
+    line-height: 20.34px !important;
+}
+
+
+.mentorme-img{
+    position: relative;
+    bottom: 98px !important;
+
+    margin-left: 169px;
+}
+
+
+.arrow{
+    position: absolute;
+    top: 50px;
+    left: 93%;
+}
+
+
+
+@media(max-width:1200px){
+    .head{font-size: 30px;}
+
+
+    .mentorme-head{
+        bottom: 150px !important;
+    }
+
+    .mentorme{
+        min-width: 700px;
+        max-width: 700px;
+        height: 192px;
+    }
+
+    .mentorme-img{
+        bottom: 48.5px !important;
+    
+        margin-left: 82px;
+    }
+
+
+    .end{
+        display: flex;
+        justify-content: end;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width:992px){
+    .mentorme{
+        min-width: 600px;
+        max-width: 600px;
+    }
+}
+
+
+@media(max-width:576px){
+
+  .mentorme{
+    min-width: 100vw;
+    height: 280px;
+  }
+
+  .mentorme-img{
+    display: none;
+  }
+
+  .center{
+    display: block;
+  }
+
+  .mentorme-head{
+    bottom: 40px !important;
+}
+
+  
+}
+
+
+
+/*----- END OF MENTORME -----*/
+
+
+
+
+/*----- MOODY -----*/
+
+.moody, .mainpartner{
+    height: 820px;
+    width: 570px;
+ 
+    border-radius: 30px;
+    background-color: #fff;
+
+    position: relative;
+}
+
+
+.moody-img{
+    margin-top: 132px;
+}
+
+
+.mainImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 235px;
+}
+
+
+.moody-head{
+    padding-top: 60px;
+
+    font-weight: 700;
+    font-size: 62px;
+    
+    line-height: 70.06px;
+}
+
+
+.moody-arrow{
+    left: 88% !important;
+}
+
+
+@media(max-width:1200px){
+    .moody, .mainpartner{
+        height: 410px;
+        min-width: 290px;
+        max-width: 290px;
+    }
+
+    .moody-head{
+       position: relative;
+       bottom: 60px;
+    }
+
+
+    .small-bottom{
+        position: relative;
+        bottom: 15px;
+    }
+
+    .small-top{
+        position: relative;
+        top: 15px;
+    }
+
+    .moody-img{margin-top: 67px;}
+    .moody-head{font-size: 30px;}
+}
+
+
+@media(max-width:576px){
+
+    .moody, .mainpartner{
+      min-width: 100vw !important;
+      height: 280px;
+    }
+
+    .moody-head{
+        bottom: 0;
+        top: 30px;
+     }
+
+}
+
+
+
+/*----- END OF MOODY ------*/
+
+
+
+
+/*----- MAIN PARTNER -----*/
+
+.mainpartner-img{
+    padding-top: 83px;
+}
+
+
+.mainpartner-head{
+    padding-top: 52px;
+
+    font-weight: 700;
+    font-size: 62px;
+    
+    line-height: 70.06px;
+}
+
+
+@media(max-width:1200px){
+    .mainpartner-head{font-size: 30px !important;}
+
+    .mainpartner-head{
+        position: relative;
+        bottom: 80px;
+     }
+
+}
+
+
+@media(max-width:576px){
+    .mainpartner-head{
+        bottom: 0;
+        top: 30px;
+     }
+}
+
+
+/*-----END OF MAIN PARTNER-----*/
+
+
+
+/*----- UNICO AND MARSO -----*/
+
+.unico-marso{
+    background-color: #E6C140 !important;
+    }
+
+
+    .unico{
+        height: 385px;
+        width: 575px;
+    
+        border-radius: 30px;
+    
+        position: relative;
+    
+        background-color: #D3392B;
+        color: #fff !important;
+    }
+
+
+    @media (max-width:1200px){
+        .unico{
+            min-width: 290px;
+            max-width: 290px;
+            height: 192px;
+        }
+
+        .head{
+            position: relative;
+            bottom: 120px;
+         }
+
+    }
+
+    
+    @media(max-width:576px){
+
+        .unico{
+            min-width: 100vw !important;
+            height: 280px;
+        }
+
+
+        .head{
+            bottom: 40px;
+         }
+
+    }
+
+/*----- END  UNICO AND MARSO -----*/
+
+/*----- END OF WORK -----*/
+
+
+
+
+
+
+/*-----SKILLS-----*/
+
+.mainpageAnimation{
+    margin-top: 200px;
+}
+
+
+.rows{
+    transition: 0.5s;
+}
+
+
+.rows:hover .row-one, .rows:hover .row-two{
+animation-play-state: paused;
+}
+
+
+.row-one, .row-two{
+    display: flex;
+    transition: 0.5s;
+}
+
+
+.row-one div{
+    margin-left: 50px;
+}
+
+
+.row-two div{
+    margin-left: 50px;
+}
+
+
+.large-button{
+    min-width: 575px;
+    height: 262px;
+
+    border: 2px solid #100f0f;
+    border-radius: 131px;
+    color: #100F0F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+
+.small-button{
+    min-width: 262px;
+    height: 262px;
+
+    border: 2px solid #100f0f;
+    border-radius: 100%;
+    color: #100F0F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+.row-one{
+    position: relative;
+    animation-name: move-left;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+
+
+@keyframes move-left {
+
+        0% {
+          left: -200%;
+        }
+
+        100%{
+          left: 0;
+        }
+
+}
+
+
+.row-two{
+    position: relative;
+    animation-name: move-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+
+
+@keyframes move-right {
+
+    0% {
+      right: 0;
+    }
+
+    100%{
+      right: 200%;
+    }
+
+}
+
+
+.blue-background{
+    background-color: #0002CD;
+    color: #fff;
+    border: none;
+}
+
+
+.yellow-background{
+    background-color: #E6C140;
+    color: #fff;
+    border: none;
+}
+
+
+.red-background{
+    background-color: #D3392B;
+    color: #fff;
+    border: none;
+}
+
+
+@media(max-width:1024px){
+
+    .large-button{
+        min-width: 331px;
+        height: 151px;
+
+        border-radius: 75.54px;
+
+        font-size: 20px;
+    }
+
+    .small-button{
+        min-width: 151px;
+        height: 151px;
+
+        font-size: 20px;
+    }
+
+    .repeat, .arrows{
+        transform: scale(0.6);
+        position: relative;
+        bottom: 50px;
+    }
+
+}
+
+
+
+
+
+/*----- END OF SKILLS -----*/
+
+
+
+
+
+/*-----FOOT-----*/
+.footer{
+    background-color: #100f0f;
+}
+
+
+.mainhead-foot{
+    color: #5B5B5B !important;
+}
+
+.foot-text{
+    line-height: 140.12px;
+    font-size: 124px;
+
+    position: relative;
+
+    width: 1200px;
+}
+
+
+.textLight{
+    font-weight: 200;
+}
+
+
+.foot{
+    height: auto;
+    padding-bottom: 30px;
+    min-width: 100vw !important;
+
+    /* position: absolute;
+    margin-top: 200px; */
+
+    background-color: #100f0f !important;
+}
+
+
+.foot-text{    
+    margin-top: 100px;
+
+    color: #5B5B5B;
+}
+
+
+
+#foot-links{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.foot-border{
+    border-top: 1px solid #BCBABA;
+}
+
+
+#foot{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+}
+
+
+.foot-link{
+    height: 42px;
+    width: 42px;
+
+    border-radius: 50%;
+    background-color: #BCBABA;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+}
+
+
+.blue{
+    width: 106px;
+    height: 106px;
+
+    background-color: #0002CD;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.red{
+    width: 106px;
+    height: 106px;
+
+    background-color: #D3392B;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tosee{
+    width: 506px;
+    height: 135px;
+
+    border: 4px solid #5B5B5B;
+    border-radius: 77.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+    width: 262px;
+    height: 262px;
+
+    background-color: #E6C140;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1200px){
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+    .logo img{
+        transform: scale(0.8);
+    }
+    .top-sm{
+        position: relative;
+        top: 20px;
+    }
+    .down{
+        position: relative;
+        top: 40px;
+    }
+    .up{
+        position: relative;
+        bottom: 40px;
+    }
+}
+
+@media(max-width:992px){
+    .logo{
+        width: 170px;
+        height: 170px;
+    }
+    .logo img{
+        transform: scale(0.7);
+    }
+}
+
+@media(max-width:768px){
+    .logo{
+        width: 135px;
+        height: 135px;
+    }
+    .logo img{
+        transform: scale(0.5);
+    }
+    .top-sm{
+        position: relative;
+        top: 30px;
+    }
+    .down{
+        position: relative;
+        top: 60px;
+    }
+    .up{
+        position: relative;
+        bottom: 60px;
+    }
+}
+.page-heading .main-page-head h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Vela__Sans_Bold';
+}
+.page-heading .main-page-head h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Vela__Sans_Regular';
+}
+
+
+.page-content-heading h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Vela__Sans_Bold';
+}
+
+.page-content-heading p {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Vela__Sans_Regular';
+}
+/*-----END OF FOOT-----*/
+
+
+
+
+
+
+
+ 
+ 

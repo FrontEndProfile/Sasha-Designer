@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab</title>
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/pages/lab.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    
+</head>
+<body onload="load__()" id="body-home">
+<div id="load_icon" class="loading slide-top"></div>
+<!--===HEADER==============================================================-->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand m-0" href="index.html">
+        <img class="header-logo" src="images/main-logo.png" alt="Logo-black">
+      </a>
+      <!-- OFFCANVAS  -->
+      <a class="btn border-0 shadow-none d-block d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </a>      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="moody.html">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lab.html">Lab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-0" href="unico.html">About</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <!-- MOBO VIEW -->
+  <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item m-0">
+          <a class="nav-link fw-500 active" aria-current="page" href="moody.html">Works</a>
+        </li>
+        <li class="nav-item m-0">
+          <a class="nav-link fw-500" href="lab.html">Lab</a>
+        </li>
+        <li class="nav-item m-0">
+          <a class="nav-link fw-500 me-0" href="contact.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!--===HEADER==============================================================-->
+
+
+
+      <!--===BIG TEXT==============================================================-->
+    <section class="mt-5 py-sm-5 mt-md-0">
+      <div class="container--ui ">
+        <div class="anime__text">
+          <div class="d-flex align-items-center ">
+
+            <h3 class="big__text d-flex align-items-center w-auto mb-0 fw-800">
+              [2D,3D<img class="big__text_heart " src="images/star.svg">]
+            </h3>
+            <h3 class="ms-4 big__text fw-800">& other</h3>
+            <img class="big__text_arrow" src="images/arrows-maintext.png">
+
+          </div>
+
+          <div class="d-flex align-items-center mb-md-4 mb-2">
+            <img src="images/microphone.png" class="microphone">
+            <h3 class="big__text fw-800">&nbsp;interesting &nbsp;things</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+      <section class="slideshow d-none">
+      <div class="row-n">
+
+        <div class="column">
+
+          <img src="images/png/lab-img-1.png" class="img-lg sm-none" onclick="openModal();currentSlide(1)">
+          <img src="images/png/lab-mobile-img-1.png" class="sm" onclick="openModal();currentSlide(1)">
+
+          <img src="images/png/lab-img-5.png" class="sm-none" onclick="openModal();currentSlide(5)">
+          <img src="images/png/lab-mobile-img-5.png" class="sm" onclick="openModal();currentSlide(5)">
+          
+          <img src="images/png/lab-img-7.png" class="sm-none" onclick="openModal();currentSlide(7)">
+          <img src="images/png/lab-mobile-img-7.png" class="sm" onclick="openModal();currentSlide(7)">
+        
+        </div>
+
+        <div class="column">
+
+          <img src="images/png/lab-img-2.png" class="sm-none" onclick="openModal();currentSlide(2)">
+          <img src="images/png/lab-mobile-img-2.png" class="sm" onclick="openModal();currentSlide(2)">
+          
+          <img src="images/png/lab-img-6.png" class="sm-none" onclick="openModal();currentSlide(6)">
+          <img src="images/png/lab-mobile-img-6.png" class="sm" onclick="openModal();currentSlide(6)">
+
+          <img src="images/png/lab-img-8.png" class="sm-none" onclick="openModal();currentSlide(8)">
+          <img src="" class="sm" onclick="openModal();currentSlide(8)">
+        
+        </div>
+        
+        <div class="column">
+
+          <img src="images/png/lab-img-3.png" class="sm-none" onclick="openModal();currentSlide(3)">
+          <img src="images/png/lab-mobile-img-3.png" class="sm" onclick="openModal();currentSlide(3)">
+
+          <img src="images/png/lab-img-4.png" class="sm-none" onclick="openModal();currentSlide(4)">
+          <img src="images/png/lab-mobile-img-4.png" class="sm" onclick="openModal();currentSlide(4)">
+
+          <img src="images/png/lab-img-1.png" class="img1" onclick="openModal();currentSlide(1)">
+
+          <img src="images/png/lab-img-9.png" class="sm-none" onclick="openModal();currentSlide(10)" class="img10">
+          <img src="images/png/lab-mobile-img-9.png" class="sm" onclick="openModal();currentSlide(10)">
+        </div>
+
+      <div class="column column-large">
+        <img src="images/png/lab-img-9.png" onclick="openModal();currentSlide(4)" class="img9">
+      </div>
+    </div>
+
+
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="images/png/slideshowm-img1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img-2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img-3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img-5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img7.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img8.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img-9.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/png/slideshow-img-10.png" style="width:100%">
+    </div>
+    
+    
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+      </section>
+
+      <div class="slideshow py-5 my-5">
+        <div class="container--ui ">
+          <div class="">
+            <div class="row d-md-flex text-center">
+
+              <div class="grid__gally">
+                <div class="grid__gally_item c_1">
+                  <a href="images/png/lab-img-1.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-1.png" class="w-100 h-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_2">
+                  <a href="images/png/lab-img-2.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-2.png" class="w-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_3">
+                  <a href="images/png/lab-img-3.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-3.png" class="w-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_4">
+                  <a href="images/png/lab-img-4.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-4.png" class="w-100">
+                  </a>
+                </div>
+
+
+                <div class="grid__gally_item c_5">
+                  <a href="images/png/lab-img-5.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-5.png" class="w-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_6">
+                  <a href="images/png/lab-img-6.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-6.png" class="w-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_7">
+                  <a href="images/png/lab-img-7.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-7.png" class="w-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_8">
+                  <a href="images/png/lab-img-8.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-8.png" class="w-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_9">
+                  <a href="images/png/lab-img-10.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-10.png" class="w-100">
+                  </a>
+                </div>
+
+                <div class="grid__gally_item c_10">
+                  <a href="images/png/lab-img-9.png" data-toggle="lightbox" data-gallery="example-gallery" class="effect w-100">
+                    <img src="images/png/lab-img-9.png" class="w-100">
+                  </a>
+                </div>
+
+
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+<!--===FOTTER==============================================================-->
+<footer class="py-5">
+  <div class="container--ui ">
+    <div class="row py-3">
+      <hr class="bg--white">
+    </div>
+    <div class="row">
+      <div class="col d-none d-sm-block">
+        <div class="footer-logo">
+          <a href="index.html">
+          <img src="images/footer-logo.png" alt="logo">
+          </a>
+        </div>
+        
+      </div>
+      <div class="col">
+        <ul class="d-flex align-items-center justify-content-center justify-content-sm-end">
+          <li class="mx-3"><a href="https://www.linkedin.com/in/aleksandra-volkova-20022146/" target="_blank"><img src="images/Linkin.png" alt="icon"></a></li>
+          <li class="mx-3"><a href="https://www.behance.net/Volkova" target="_blank"><img src="images/Behance.png" alt="icon"></a></li>
+          <li class="mx-3"><a href="https://www.facebook.com/sasha.volkova.9/" target="_blank"><img src="images/Facebook.png" alt="icon"></a></li>
+          <li class="mx-3"><a href="https://www.instagram.com/artksana/" target="_blank"><img src="images/Instagram.png" alt="icon"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--===FOTTER==============================================================-->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.0/dist/index.bundle.min.js"></script>
+<!-- <script>
+  import Lightbox from 'bs5-lightbox';
+
+document.querySelectorAll('.my-lightbox-toggle').forEach(el => el.addEventListener('click', Lightbox.initialize));
+</script> -->
+</body>
+</html>

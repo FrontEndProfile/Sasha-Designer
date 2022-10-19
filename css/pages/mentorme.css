@@ -1,0 +1,250 @@
+#mentormelink{
+    margin-top: 200px;
+
+    display: flex;
+    
+    flex-direction: column;
+
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+a{
+    display: flex;
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+
+.mentorme{
+    width: 1198px;
+    height: 385px;
+
+    background-color: #FFFFFF;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+
+.head{
+    padding-top: 195px;
+
+    font-weight: 700;
+    font-size: 62px;
+    
+    line-height: 70.06px;
+}
+
+
+.small{
+    font-size: 18px !important;
+    line-height: 20.34px !important;
+}
+
+
+.mentorme-img{
+    position: relative;
+    bottom: 98px !important;
+
+    margin-left: 169px;
+}
+
+
+.arrow{
+    position: absolute;
+    top: 50px;
+    left: 93%;
+}
+
+body{
+    background-color:#f2f2f2 !important;
+}
+
+
+
+/* navbar css */
+
+.nav-item{
+    margin-left: 53px;
+}
+
+
+.nav-link{
+    font-size: 18px;
+
+    color: #000000 !important;
+
+
+    padding-bottom: 0;
+
+    transition: 0.3s;
+}
+
+.navbar-brand:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(0deg);
+    }
+
+    0%{
+        transform: rotate(360deg);
+    }
+
+}
+/* navbar end */
+
+/* header css start */
+    .header-text{
+        display: flex;
+        justify-content: center;
+    }
+    .top-text{
+        padding-top: 60px;
+    }
+    .top-text h1{
+        font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    }
+    .top-text h3{
+        font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    }
+    @media screen and (max-width:426px) {
+        .top-text h1{
+          font-size: 40px;
+          text-align: center;
+        }
+        .top-text h3{
+            font-size: 20px;
+        }
+    }
+/* header css end */
+
+
+/* block-1 css start */
+.block-1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+}
+.flex-box{
+
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 130px;
+    margin: 15px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.flex-box h1 {
+    text-align: center;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+}
+.flex-box p{
+    
+    text-align: center;
+    text-align: center;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+}
+
+@media screen and (max-width:426px) {
+    .block-1{
+        display: flex;
+
+        flex-direction: column;
+    }
+    .flex-box{
+        margin: 15px auto 0 ;
+        width: 300px;
+    }
+}
+/* block-2 css end */
+
+ /* text css */
+.bottomText{
+    display: flex;
+    justify-content: end;
+}
+
+.imgBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.imgBottom h1{
+    font-size: 62px;
+    font-weight: bolder;
+}
+
+
+.imgBottom p{
+    width: 38vw;
+    
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+@media (max-width:1024px) {    
+.imgBottom h1{font-size: 50px;}
+.imgBottom p{width: 50vw;}
+}
+
+@media (max-width:768px) {
+.imgBottom h1{font-size: 40px;}
+.imgBottom p{width: 60vw;}
+.foot-link, .foot-link i{font-size: 1.2rem;}
+}
+
+
+@media (max-width:680px){
+.moody-main-md{display: block;}
+.moody-main{display: none;}
+.bottomText{justify-content: start;}
+}
+
+
+
+@media (max-width:375px){
+    .imgBottom p{width: 100vw;}
+}
+/* text css end */
+
+
+/* bottom arrow css */
+.arrow{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.block-3{
+    display: flex;
+    justify-content: center;
+}
+

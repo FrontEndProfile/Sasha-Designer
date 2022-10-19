@@ -1,0 +1,188 @@
+body {
+     font-family: Arial;
+}
+
+.moodyImg-md{
+    display: none;
+}
+
+
+
+.mainhead{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding-top: 124px;
+}
+
+
+.bottomText{
+    display: flex;
+    justify-content: end;
+}
+
+
+.imgBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.imgBottom h1{
+    font-size: 62px;
+    font-weight: bolder;
+}
+
+
+.imgBottom p{
+    width: 38vw;
+    
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width:1024px) {    
+.imgBottom h1{font-size: 50px;}
+.imgBottom p{width: 50vw;}
+}
+
+@media (max-width:768px) {
+.imgBottom h1{font-size: 40px;}
+.imgBottom p{width: 60vw;}
+.foot-link, .foot-link i{font-size: 1.2rem;}
+}
+
+
+@media (max-width:680px){
+.moody-main-md{display: block;}
+.moody-main{display: none;}
+.bottomText{justify-content: start;}
+}
+
+
+@media (max-width:375px){
+    .imgBottom p{width: 100vw;}
+}
+
+
+.top{
+    position: relative;
+    top: 250px;
+}
+
+
+.bottom{
+    position: relative;
+    bottom: 190px;
+}
+
+
+.head h1{
+   font-size: 124px; 
+   font-weight: 700;
+} 
+
+
+.head h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.goUp{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.goUp a{
+    border: 2px solid #000;
+    border-radius: 100%;
+
+    padding: 30px 45px;
+    transition: 0.3s;
+}
+
+.goUp a:hover{
+background-color: #000;
+}
+
+
+.goUp a:hover .go-up{
+    filter: invert(100%);
+}
+
+
+.footer{
+    width: 100%;
+    margin-top: 200px;
+
+    background-color: #100F0F;
+}
+
+
+#foot-links{
+    display: flex !important;
+    flex-direction: row;
+}
+
+
+.foot-link{
+    border-radius: 50%;
+    background-color: #BCBABA;
+    color: #100F0F !important;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+}
+@media screen and (max-width:769px) {
+    .mainhead h1{
+        font-size: 62px;
+    }
+}
+@media screen and(max-width:426px) {
+
+    .mainhead h1{
+        font-size: 62px;
+    }
+    .mainhead img{
+        display: none;
+    }
+    .img22 img{
+        display: none;
+    }
+    .previousPage img{
+        display: none;
+    }
+    .nextPage img{
+        display: none !;
+    }
+}
+
+
+.carousel-indicators [data-bs-target] {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	margin-right: 5px;
+	margin-left: 5px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	opacity: .4;
+	transition: opacity .6s ease;
+	border-radius: 50%;
+}

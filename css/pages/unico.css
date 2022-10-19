@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    scroll-behavior: smooth;
+     font-family: Arial;
+}
+
+/* navbar css */
+.nav-item{
+    margin-left: 53px;
+}
+
+
+.nav-link{
+    font-size: 18px;
+
+    color: #000000 !important;
+
+
+    padding-bottom: 0;
+
+    transition: 0.3s;
+}
+
+.navbar-brand:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(0deg);
+    }
+
+    0%{
+        transform: rotate(360deg);
+    }
+}
+    
+
+/* header text css start */
+     .header-text{
+        display: flex;
+        justify-content: center;
+    }
+    .top-text{
+        padding-top: 60px;
+    }
+    .top-text h1{
+        font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 125px;
+    }
+    .top-text h3{
+        font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    }
+    @media screen and (max-width:426px) {
+        .top-text h1{
+          font-size: 40px;
+          text-align: center;
+        }
+        .top-text h3{
+            font-size: 20px;
+        }
+    }
+  /* header text css end */
+
+     /* text css start */
+
+    .bottomText{
+        display: flex;
+        justify-content: end;
+    }
+
+
+    .imgBottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+
+    .imgBottom h1{
+        font-size: 62px;
+        font-weight: bolder;
+    }
+
+
+    .imgBottom p{
+        width: 38vw;
+
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    @media (max-width:1024px) {
+    .imgBottom h1{font-size: 50px;}
+    .imgBottom p{width: 50vw;}
+    }
+
+    @media (max-width:768px) {
+    .imgBottom h1{font-size: 40px;}
+    .imgBottom p{width: 60vw;}
+    .foot-link, .foot-link i{font-size: 1.2rem;}
+    }
+
+
+    @media (max-width:680px){
+    .moody-main-md{display: block;}
+    .moody-main{display: none;}
+    .bottomText{justify-content: start;}
+    }
+
+
+
+    @media (max-width:375px){
+        .imgBottom p{width: 100vw;}
+    }
+
+ /* text css end */
+ .part-10{
+    display: flex;
+    justify-content: center;
+ }
